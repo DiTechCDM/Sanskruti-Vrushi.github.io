@@ -1640,7 +1640,7 @@ footer {
 .enquire-now button {
     writing-mode: vertical-lr;
     box-shadow: none !important;
-    font-family: 'Poppins_Regular';
+    font-family: 'Poppins_SemiBold';
     font-size: calc(10pt + 0.15vw);
     color: white;
     text-transform: uppercase;
