@@ -1,0 +1,883 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- EXTERNAL CSS LINK -->
+    <link rel="stylesheet" href="./Assets/CSS/style.css?ver=1.4">
+    <link rel="stylesheet" href="./Assets/CSS/slick-theme.css?ver=1.4">
+    <link rel="stylesheet" href="./Assets/CSS/slick.css?ver=1.4">
+    <link rel="stylesheet" href="./Assets/CSS/master.css?ver=1.4">
+
+    <!-- FONT AWESOME CDN LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- owl carousel Link -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+
+    <title>Sanskruti Vrushi</title>
+</head>
+
+<body>
+    <!-- Navbar starts here -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img id="logo" style="display: block;" src="./Assets/IMG/1.PNG"
+                        alt=""></a>
+                <button onclick="hideLogo()" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about_wrapper">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about_wrapper">Floor Plans</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#owl_carousel">Amenities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#specification_wrapper">Specifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#location_wrapper">Location</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar Ends here -->
+
+    <!-- Banner component starts here -->
+    <section id="Home">
+        <div class="container banner-wrapper">
+            <div class="slider-grid-row">
+                <div class="bottom-order" id="order_initial">
+                    <img src="./Assets/IMG/decorative-border-png-25185.png" alt="">
+                    <h1>Ready to move in 1, 2 & 3BHK homes</h1>
+                    <p>1, 2 & 3 BHK starting from ₹1.67 Cr*.</p>
+                    <p><span><i class="fa-solid fa-location-dot"></i></span>&nbsp; Kandivali (W)</p>
+                </div>
+                <div>
+                    <div class="banner-overlay-text">
+                        <img class="banner-img" src="./Assets/IMG/image-000.png" alt="">
+                        <h4><span>SANSKRUTI VRUSHI</span></h4>
+                    </div>
+                </div>
+                <div id="order_reverse">
+                    <div class="bottom-order">
+                        <h1>Ready to move in 1, 2 & 3BHK homes</h1>
+                        <p>1, 2 & 3 BHK starting from ₹1.67 Cr*.</p>
+                        <p><span><i class="fa-solid fa-location-dot"></i></span>&nbsp; Kandivali (W)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner component ends here -->
+
+    <!-- form component starts here -->
+    <section class="container-fluid" id="form_wrapper">
+        <form id="enquire_now" method="post">
+            <div class="form-grid-row">
+                <div class="form-grid-col">
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                </div>
+                <div class="form-grid-col">
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-grid-col">
+                    <input type="number" name="mobile" id="mobile" placeholder="Mobile No" required>
+                </div>
+                <div class="form-grid-col">
+                    <input type="text" name="configuration" id="configuration" placeholder="Configuration" required>
+                </div>
+                <div class="form-grid-col">
+                    <input type="number" name="budget" id="budget" placeholder="Budget" required>
+                </div>
+                <div class="form-grid-col submit">
+                    <button type="submit" id="submit" name="submit">
+                        <svg class="icon-arrow before">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span class="label">Submit</span>
+                        <svg class="icon-arrow after">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+
+                        <svg style="display: none;">
+                            <defs>
+                                <symbol id="arrow" viewBox="0 0 35 15">
+                                    <title>Arrow</title>
+                                    <path
+                                        d="M27.172 5L25 2.828 27.828 0 34.9 7.071l-7.07 7.071L25 11.314 27.314 9H0V5h27.172z " />
+                                </symbol>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <p id="alert"></p>
+    <!-- form component ends here -->
+
+    <!-- about us component starts here -->
+    <section id="about_wrapper">
+        <div class="container">
+            <div class="about-grid-row">
+                <div class="about-grid-col-img">
+                    <h2><span>SANSKRUTI VRUSHI</span></h2>
+                    <p>With thoughtfully designed spaces for recreational purposes, avail of our classic amenities with
+                        efficient apartments and a terrace garden that fulfill your needs for a smart and healthy
+                        lifestyle.</p>
+                </div>
+                <div>
+                    <div class="slider-container">
+                        <div class="slides-wrapper">
+                            <div class="img-container">
+                                <img src="./Assets/IMG/floorplan.PNG" alt="">
+                            </div>
+                            <div class="img-container">
+                                <img src="./Assets/IMG/floorplan1.PNG" alt="">
+                            </div>
+                            <div class="img-container">
+                                <img src="./Assets/IMG/floorplan.PNG" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about us component ends here -->
+
+    <!-- Amenities component starts here -->
+    <section id="owl_carousel">
+        <div class="container">
+            <h2><span>Experience The Joy</span></h2>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <figure>
+                        <img src="./Assets/IMG/4.jpg" alt="Indoor Games" />
+                        <div class="overlay">
+                            <div>
+                                <p>STAR GAZING</p>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="./Assets/IMG/6.jpg" alt="Indoor Games" />
+                        <div class="overlay">
+                            <div>
+                                <p>KID'S PLAY AREA</p>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="./Assets/IMG/7.jpg" alt="Indoor Games" />
+                        <div class="overlay">
+                            <div>
+                                <p>SURFACE STILT PARKING</p>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="./Assets/IMG/5.jpg" alt="Indoor Games" />
+                        <div class="overlay">
+                            <div>
+                                <p>SENIOR CITIZENS SEATING AREA</p>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Amenities component ends here -->
+
+    <!-- Specifications component starts here -->
+    <section id="specification_wrapper">
+        <div class="container">
+            <h2><span>Specifications</span></h2>
+            <div class="specification-grid-row">
+                <div>
+                    <div>
+                        <img src="./Assets/IMG/charging.png" alt="">
+                    </div>
+                    <p>E.V. Charging Station</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="./Assets/IMG/yoga-pose.png" alt="">
+                    </div>
+                    <p>Yogalaya</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="./Assets/IMG/swing.png" alt="">
+                    </div>
+                    <p>Jhoola</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="./Assets/IMG/flower.png" alt="">
+                    </div>
+                    <p>Scented Flowers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- owl carousel component ends here -->
+    <!-- Specifications component ends here -->
+
+    <!-- location component starts here -->
+    <section id="location_wrapper">
+        <div class="container">
+            <h2><span>Location</span></h2>
+            <p>Perfect spaces are complemented with the perfect location. It is not everywhere that one location will
+                have it all. Nestled in the heart of Mumbai, Kandivali is a cultural melting pot and boasts of the best
+                of
+                both worlds. Kandivali is not merely a location, it is a statement of leading an unprecedented luxurious
+                lifestyle.</p>
+            <div class="location-faq">
+                <div>
+                    <img src="./Assets/IMG/location.PNG" alt="">
+                </div>
+                <div>
+                    <div class="aks-accordion" itemscope itemtype="#" data-accordion="">
+                        <div class="aks-accordion-row">
+                            <div class="aks-accordion-item" itemscope itemprop="mainEntity" itemtype="#"
+                                data-accordion-item="" data-ripple="#00000026">
+                                <div class="aks-accordion-item-row">
+                                    <div class="aks-accordion-item-icon">
+                                        <svg class="aks-accordion-item-icon-open" viewBox="0 0 512 512">
+                                            <path
+                                                d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216
+                                v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z" />
+                                        </svg>
+                                        <svg class="aks-accordion-item-icon-close" viewBox="0 0 512 512">
+                                            <path
+                                                d="M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z" />
+                                        </svg>
+
+                                    </div>
+                                    <div class="aks-accordion-item-title">
+                                        <h6 itemprop="name">School and Colleges</h6>
+                                    </div>
+                                </div>
+                                <div class="aks-accordion-item-content" itemscope itemprop="acceptedAnswer" itemtype="#"
+                                    data-accordion-content="">
+                                    <p itemprop="text">Billabong High International School in Malad, Mumbai - 800 M <br>
+                                        Sir J. P. High School &amp; Jr. College Of Education (D.ED.) - 900 M <br>
+                                        St. Judes High School - 1.1 Km <br>
+                                        Atharva college of Engineering - 1.8 Km <br>
+                                        Oxford B.ED. College - 2.8 Km <br>
+                                        Elia Sarwat High School and Junior College - 2.9 Km <br>
+                                        St. Mathew's High School &amp; Junior College - 3.5 Km <br>
+                                        Nalanda college - 4.5 Km <br>
+
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="aks-accordion-item" itemscope itemprop="mainEntity" itemtype="#"
+                                data-accordion-item="" data-ripple="#00000026">
+                                <div class="aks-accordion-item-row">
+                                    <div class="aks-accordion-item-icon">
+                                        <svg class="aks-accordion-item-icon-open" viewBox="0 0 512 512">
+                                            <path
+                                                d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216
+                                v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z" />
+                                        </svg>
+                                        <svg class="aks-accordion-item-icon-close" viewBox="0 0 512 512">
+                                            <path
+                                                d="M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z" />
+                                        </svg>
+
+                                    </div>
+                                    <div class="aks-accordion-item-title">
+                                        <h6 itemprop="name">Malls &amp; Super Market</h6>
+                                    </div>
+                                </div>
+                                <div class="aks-accordion-item-content" itemscope itemprop="acceptedAnswer" itemtype="#"
+                                    data-accordion-content="">
+                                    <p itemprop="text">Bhoomi Mart - 800 M <br>
+                                        Sweet Home Super Market - 1.1 Km <br>
+                                        Infiniti Mall - 4.6 Km <br>
+                                        Natraj Market - 4.7 Km <br>
+                                        Inorbit Mall - 5.3 Km <br>
+                                        Growels Mall - 6.6 Km <br>
+                                        Oberoi Mall - 8.7 Km <br>
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="aks-accordion-item" itemscope itemprop="mainEntity" itemtype="#"
+                                data-accordion-item="" data-ripple="#00000026">
+                                <div class="aks-accordion-item-row">
+                                    <div class="aks-accordion-item-icon">
+                                        <svg class="aks-accordion-item-icon-open" viewBox="0 0 512 512">
+                                            <path
+                                                d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216
+                                v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z" />
+                                        </svg>
+                                        <svg class="aks-accordion-item-icon-close" viewBox="0 0 512 512">
+                                            <path
+                                                d="M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z" />
+                                        </svg>
+
+                                    </div>
+                                    <div class="aks-accordion-item-title">
+                                        <h6 itemprop="name">Hospital</h6>
+                                    </div>
+                                </div>
+                                <div class="aks-accordion-item-content" itemscope itemprop="acceptedAnswer" itemtype="#"
+                                    data-accordion-content="">
+                                    <p itemprop="text">Mangalmur Hospital - 1.7 Km <br>
+                                        Phoenix Hospital Pvt Ltd. - 1.9 Km <br>
+                                        Atlantis Hospital - 2.1 Km <br>
+                                        Zenith Multispeciality Hospital - 2.6 Km <br>
+                                        Lotus Multispeciality Hospital - 3.6 Km <br>
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="aks-accordion-item" itemscope itemprop="mainEntity" itemtype="#"
+                                data-accordion-item="" data-ripple="#00000026">
+                                <div class="aks-accordion-item-row">
+                                    <div class="aks-accordion-item-icon">
+                                        <svg class="aks-accordion-item-icon-open" viewBox="0 0 512 512">
+                                            <path
+                                                d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216
+                                v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z" />
+                                        </svg>
+                                        <svg class="aks-accordion-item-icon-close" viewBox="0 0 512 512">
+                                            <path
+                                                d="M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z" />
+                                        </svg>
+
+                                    </div>
+                                    <div class="aks-accordion-item-title">
+                                        <h6 itemprop="name">Fine Dining</h6>
+                                    </div>
+                                </div>
+                                <div class="aks-accordion-item-content" itemscope itemprop="acceptedAnswer" itemtype="#"
+                                    data-accordion-content="">
+                                    <p itemprop="text">Bageecha Resort - 2.5 Km <br>
+                                        The Green Village Resorts - 2.8 Km <br>
+                                        Uncle's Kitchen - 3.3 Km <br>
+                                        The Bar Stock Exchange - 4.3 Km <br>
+                                        The Resort Madh-Marve - 6.5 Km <br>
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="aks-accordion-item" itemscope itemprop="mainEntity" itemtype="#"
+                                data-accordion-item="" data-ripple="#00000026">
+                                <div class="aks-accordion-item-row">
+                                    <div class="aks-accordion-item-icon">
+                                        <svg class="aks-accordion-item-icon-open" viewBox="0 0 512 512">
+                                            <path
+                                                d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216
+                                v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z" />
+                                        </svg>
+                                        <svg class="aks-accordion-item-icon-close" viewBox="0 0 512 512">
+                                            <path
+                                                d="M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z" />
+                                        </svg>
+
+                                    </div>
+                                    <div class="aks-accordion-item-title">
+                                        <h6 itemprop="name">Mandir &amp; Churches</h6>
+                                    </div>
+                                </div>
+                                <div class="aks-accordion-item-content" itemscope itemprop="acceptedAnswer" itemtype="#"
+                                    data-accordion-content="">
+                                    <p itemprop="text">Shakti temple - 850 M <br>
+                                        Jankalyan Nagar Ganesh Temple - 900 M <br>
+                                        Bethel Mar Thoma Church, Malad - 900 M <br>
+                                        JNRJ Church - 1.9 Km <br>
+                                        Sacred Heart Syro Malabar Church - 2.5 Km <br>
+                                        Shree Shankeshwar Parshwanath Jain Mandir - 2.8 Km <br>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="aks-accordion-item" itemscope itemprop="mainEntity" itemtype="#"
+                                data-accordion-item="" data-ripple="#00000026">
+                                <div class="aks-accordion-item-row">
+                                    <div class="aks-accordion-item-icon">
+                                        <svg class="aks-accordion-item-icon-open" viewBox="0 0 512 512">
+                                            <path
+                                                d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216
+                                v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z" />
+                                        </svg>
+                                        <svg class="aks-accordion-item-icon-close" viewBox="0 0 512 512">
+                                            <path
+                                                d="M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z" />
+                                        </svg>
+
+                                    </div>
+                                    <div class="aks-accordion-item-title">
+                                        <h6 itemprop="name">Beaches</h6>
+                                    </div>
+                                </div>
+                                <div class="aks-accordion-item-content" itemscope itemprop="acceptedAnswer" itemtype="#"
+                                    data-accordion-content="">
+                                    <p itemprop="text">Marve Beach - 4.6 Km <br>
+                                        Hamla Beach - 5.1 Km <br>
+                                        Aksa Beach - 6.2 Km <br>
+                                        Versova Beach - 12.1 Km <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- location component ends here -->
+
+    <!-- Icon component starts here -->
+    <section id="icons_wrapper">
+        <div class="container social-icons">
+            <h3><span>SANSKRUTI VRUSHI</span></h3>
+            <p>Sanskruti Vrushi SaiBaba Nagar, Opposite SaiBaba Temple, OFF S.V Rd, Borivali (w), Mumbai 400092</p>
+            <ul>
+                <li><a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a> </li>
+                <li><a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i> </a>
+                </li>
+                <li><a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i> </a> </li>
+                <li><a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i> </a> </li>
+                <li><a href="#"> <i class="fa fa-youtube" aria-hidden="true"></i> </a> </li>
+                <li><a href="#"> <i class="fa fa-pinterest-p" aria-hidden="true"></i> </a> </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Icon component ends here -->
+
+    <!-- contact details component starts here -->
+    <section id="contact_details_wrapper">
+        <div class="container">
+            <div class="contact-details-grid-row">
+                <a href="tel:+91 9004242072">
+                    <div>
+                        <span><i class="fa-solid fa-phone"></i></span>&nbsp;<span>+91 9833-090-090</span>
+                    </div>
+                </a>
+                <a href="mailto:manthanl86@gmail.com">
+                    <div>
+                        <span><i class="fa-solid fa-envelope"></i></span>&nbsp;<span>info@sanskrutinirman.com</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- contact details component ends here -->
+
+    <!-- footer component starts here -->
+    <footer>
+        <div class="container footer">
+            <p><b>Disclaimer -</b>The Specifications, Images And Other Details Herein Are Only Indicative And Subject To
+                The Approval Of Concerned Authorities. The Developer/realtors Reserves The Right To Change Any Or All Of
+                These In The Interest Of The Development Without Prior Notice Or Obligation. The Printed Material Does
+                Not Constitute An Offer And/or Contract Of Any Type Between The Developer/realtors & The Recipient. Any
+                Purchases Of Promises Shall Be Governed By The Terms And Conditions Of The Agreement For Sale Entered
+                Between The Parties, And No Details Mentioned In The Brochure Shall In Any Way Govern Such Transactions.
+            </p>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>© 2022 Marina Enclave | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer component ends here -->
+
+    <div>
+        <div id="image-viewer">
+            <span class="close">&times;</span>
+            <img class="modal-content modal-lightbox" id="full-image">
+        </div>
+    </div>
+
+    <!-- floating icons component starts here -->
+    <div class="floating-icons">
+        <div class="mainopShadow"></div>
+        <div class="fab">
+            <div class="mainop">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div id="forms" class="minifab op5"></div>
+            <div id="drawings" class="minifab op4"></div>
+            <div id="slides" class="minifab op3"></div>
+            <a href="tel:+91 9004242072">
+                <div id="sheets" class="minifab op2">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=+919004242072&text=Hi,%20Marina%20Enclave!">
+                <div id="docs" class="minifab op1">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- floating icons component ends here -->
+
+    <!-- enquire now modal component starts here -->
+    <div class="enquire-now">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Enquire Now
+        </button>
+        <!-- Button trigger modal -->
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-enquiry">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><span>Enquire Now</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="footer_enquiry" method="post">
+                        <div class="form-grid-modal">
+                            <div>
+                                <input type="text" name="name" id="name" placeholder="Name" required>
+                            </div>
+                            <div>
+                                <input type="email" name="email" id="email" placeholder="Email" required>
+                            </div>
+                            <div>
+                                <input type="number" name="mobile" id="mobile" placeholder="Mobile No" required>
+                            </div>
+                            <div>
+                                <input type="text" name="configuration" id="configuration" placeholder="Configuration"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <input type="number" name="budget" id="budget" placeholder="Budget" required>
+                        </div>
+                        <div>
+                            <button type="submit" name="submit" id="fsubmit">
+                                <svg class="icon-arrow before">
+                                    <use xlink:href="#arrow"></use>
+                                </svg>
+                                <span class="label">Submit</span>
+                                <svg class="icon-arrow after">
+                                    <use xlink:href="#arrow"></use>
+                                </svg>
+
+                                <svg style="display: none;">
+                                    <defs>
+                                        <symbol id="arrow" viewBox="0 0 35 15">
+                                            <title>Arrow</title>
+                                            <path
+                                                d="M27.172 5L25 2.828 27.828 0 34.9 7.071l-7.07 7.071L25 11.314 27.314 9H0V5h27.172z " />
+                                        </symbol>
+                                    </defs>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                    <p id="falert"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <!-- enquire now modal component ends here -->
+
+    <!-- fixed form component starts here -->
+    <section id="bottom_form_wrapper">
+        <div class="container-fluid">
+            <form id="bottom_enquire" method="post">
+                <div class="bottom-form-grid-row">
+                    <div>
+                        <input type="text" name="name" id="name" placeholder="Name" required>
+                    </div>
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <input type="number" name="mobile" id="mobile" placeholder="Mobile No" required>
+                    </div>
+                    <div>
+                        <input type="text" name="configuration" id="configuration" placeholder="Configuration" required>
+                    </div>
+                    <div>
+                        <input type="number" name="budget" id="budget" placeholder="Budget" required>
+                    </div>
+                    <div>
+                        <button type="submit" id="submit" name="submit">
+                            <svg class="icon-arrow before">
+                                <use xlink:href="#arrow"></use>
+                            </svg>
+                            <span class="label">Submit</span>
+                            <svg class="icon-arrow after">
+                                <use xlink:href="#arrow"></use>
+                            </svg>
+
+                            <svg style="display: none;">
+                                <defs>
+                                    <symbol id="arrow" viewBox="0 0 35 15">
+                                        <title>Arrow</title>
+                                        <path
+                                            d="M27.172 5L25 2.828 27.828 0 34.9 7.071l-7.07 7.071L25 11.314 27.314 9H0V5h27.172z " />
+                                    </symbol>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <p id="balert"></p>
+        </div>
+    </section>
+
+    <section id="quote">
+        <div class="trigger">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Request a Quote
+            </button>
+            <!-- Button trigger modal -->
+        </div>
+    </section>
+    <!-- fixed form component ends here -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        jQuery('#enquire_now').on('submit', function (e) {
+            jQuery('#alert').html('Please wait...');
+            jQuery('#submit').attr('disabled', true);
+            jQuery.ajax({
+                url: 'submit.php',
+                type: 'post',
+                data: jQuery('#enquire_now').serialize(),
+                success: function (result) {
+                    jQuery('#msg').html(result);
+                    jQuery('#alert').html('we will get back to you shortly 👍');
+                    jQuery('#submit').attr('disabled', false);
+                    jQuery('#enquire_now')[0].reset();
+                }
+            });
+            e.preventDefault();
+        });
+
+        jQuery('#footer_enquiry').on('submit', function (e) {
+            jQuery('#falert').html('Please wait...');
+            jQuery('#fsubmit').attr('disabled', true);
+            jQuery.ajax({
+                url: 'submit.php',
+                type: 'post',
+                data: jQuery('#footer_enquiry').serialize(),
+                success: function (result) {
+                    jQuery('#msg').html(result);
+                    jQuery('#falert').html('we will get back to you shortly 👍');
+                    jQuery('#fsubmit').attr('disabled', false);
+                    jQuery('#footer_enquiry')[0].reset();
+                }
+            });
+            e.preventDefault();
+        });
+
+        jQuery('#bottom_enquire').on('submit', function (e) {
+            jQuery('#balert').html('Please wait...');
+            jQuery('#bsubmit').attr('disabled', true);
+            jQuery.ajax({
+                url: 'submit.php',
+                type: 'post',
+                data: jQuery('#bottom_enquire').serialize(),
+                success: function (result) {
+                    jQuery('#msg').html(result);
+                    jQuery('#balert').html('we will get back to you shortly 👍');
+                    jQuery('#bsubmit').attr('disabled', false);
+                    jQuery('#bottom_enquire')[0].reset();
+                }
+            });
+            e.preventDefault();
+        });
+    </script>
+
+    <!-- Owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        function hideLogo() {
+            var logo = document.getElementById('logo');
+            if (logo.style.display === 'block') {
+                logo.style.display = 'none';
+            } else if (logo.style.display === 'none') {
+                logo.style.display = 'block'
+            }
+        }
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: false,
+            autoplay: true,
+            smartSpeed: 1000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1080: {
+                    items: 2
+                },
+                1081: {
+                    items: 3
+                },
+            }
+        })
+    </script>
+
+    <script>
+        (function () {
+            "use strict";
+            var jQueryPlugin = (window.jQueryPlugin = function (ident, func) {
+                return function (arg) {
+                    if (this.length > 1) {
+                        this.each(function () {
+                            var $this = $(this);
+
+                            if (!$this.data(ident)) {
+                                $this.data(ident, func($this, arg));
+                            }
+                        });
+
+                        return this;
+                    } else if (this.length === 1) {
+                        if (!this.data(ident)) {
+                            this.data(ident, func(this, arg));
+                        }
+
+                        return this.data(ident);
+                    }
+                };
+            });
+        })();
+
+        (function () {
+            "use strict";
+
+            function Accordion($roots) {
+                var element = $roots;
+                var accordion = $roots.first("[data-accordion]");
+                var accordion_target = $roots.find("[data-accordion-item]");
+                var accordion_content = $roots.find("[data-accordion-content]");
+                $(accordion_target).click(function () {
+                    $(this).toggleClass("opened");
+                    $(this).find(accordion_content).slideToggle("slow");
+                    $(this).siblings().find(accordion_content).slideUp("slow");
+                    $(this).siblings().removeClass("opened");
+                });
+            }
+            $.fn.Accordion = jQueryPlugin("Accordion", Accordion);
+            $("[data-accordion]").Accordion();
+
+            function Ripple_Button($root) {
+                var elements = $root;
+                var ripple_btn = $root.first("[data-ripple]");
+                $(ripple_btn).on("click", function (event) {
+                    event.preventDefault();
+                    var $div = $("<div/>"),
+                        btnOffset = ripple_btn.offset(),
+                        xPos = event.pageX - btnOffset.left,
+                        yPos = event.pageY - btnOffset.top;
+                    $div.addClass("ripple-effect");
+                    $div.css({
+                        height: ripple_btn.height(),
+                        width: ripple_btn.height(),
+                        top: yPos - $div.height() / 2,
+                        left: xPos - $div.width() / 2,
+                        background: ripple_btn.data("ripple") || "#ffffff26"
+                    });
+                    ripple_btn.append($div);
+
+                    window.setTimeout(function () {
+                        $div.remove();
+                    }, 2000);
+                });
+            }
+            $.fn.Ripple_Button = jQueryPlugin("Ripple_Button", Ripple_Button);
+            $("[data-ripple]").Ripple_Button();
+        })();
+    </script>
+    <script src="./Assets/JS/main.js?ver=1.4"></script>
+
+    <script>
+        $(window).on('load', function () {
+            $('#exampleModal').modal('show');
+        });
+    </script>
+</body>
+
+</html>
