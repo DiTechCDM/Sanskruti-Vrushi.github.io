@@ -233,7 +233,7 @@ header {
 .slider-grid-row>.bottom-order>img {
     width: 280px;
     position: absolute;
-    top: 95px;
+    top: 75px;
 }
 
 .slider-grid-row>.bottom-order>p {
@@ -2103,7 +2103,7 @@ footer {
         -o-border-radius: 0px;
         box-shadow: none;
         outline: none;
-        font-family: 'Poppins_SemiBold';
+        font-family: 'Poppins_Regular';
         font-size: calc(10pt + 0.15vw);
         color: white;
         text-transform: uppercase;
